@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+
+<html lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>CopyPasteShop</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/backend.css" />
+    
+<script src="js/bookserviceUsuarios.js"></script>
+
+</head>
+<body >
+ 
+<div class="page-header">
+    <h1>BookService</h1>
+</div>
+
+<div class="row">
+
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h2 class="panel-title">Productos</h2>
+            </div>
+            <div class="panel-body">
+                <ul class="list-unstyled" id="books">
+                    <li>
+                        <strong><span class="AuthorName"></span></strong>: <span class="Title"></span>
+                        <small><a class="detalles" href="#">Details</a></small>
+                        <small><a class="actualizar" href="#">Actualizar</a></small>
+                        <small><a class="borrar" href="#">Borrar</a></small>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="alert alert-danger" id="cuadroerror"><p id="textoerror"></p></div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h2 class="panel-title">Detalles</h2>
+            </div>
+            <table class="table">
+                <tr><td>Id</td><td id="AuthorName"></td></tr>
+                <tr><td>Nombre</td><td id="Title"></td></tr>
+                <tr><td>Precio</td><td id="Year"></td></tr>
+                
+            </table>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h2 id="tituloform" class="panel-title">Añadir Producto</h2>
+            </div>
+
+            <div class="panel-body">
+                <form id="formbooks" class="form-horizontal" action="#"> 
+                    <div class="form-group">
+                        
+                        
+                    </div>
+
+                    
+
+                        
+
+                        <label for="inputGenre" class="col-sm-2 control-label">Nombre</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="inputGenre" />
+                        </div>
+
+                        <label for="inputPrice" class="col-sm-2 control-label">Precio</label>
+                        <div class="col-sm-10">
+                            <input type="text" step="any" class="form-control" id="inputPrice" />
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+               
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
